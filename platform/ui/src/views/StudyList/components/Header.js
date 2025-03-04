@@ -1,12 +1,12 @@
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 import { withTranslation } from 'react-i18next';
 
-import { IconButton, Icon, NavBar } from '../../../components';
+import { Icon, IconButton, NavBar } from '../../../components';
 
-import OHIFLogo from './OHIFLogo';
+import KapsikiDICOMLogo from './KapsikiDICOMLogo';
 
-function Header({ appLogo = OHIFLogo(), children, t }) {
+function Header({ appLogo = KapsikiDICOMLogo(), children, t }) {
   const showSettingsDropdown = () => {
     // TODO: Update once dropdown component is created
   };

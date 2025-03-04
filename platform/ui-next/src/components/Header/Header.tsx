@@ -67,7 +67,7 @@ function Header({
           >
             {isReturnEnabled && <Icons.ChevronPatient className="text-primary-active w-8" />}
             <div className="ml-1">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.OHIFLogo />}
+              {WhiteLabeling?.createLogoComponentFn?.(React, props) || <Icons.KapsikiDICOM />}
             </div>
           </div>
         </div>

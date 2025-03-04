@@ -13,15 +13,15 @@
     --foreground: 0 0% 98%;
     --card: 234 64% 10%;
     --card-foreground: 0 0% 98%;
-    --popover: 219 90% 15%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 50%;
     --primary: 214 98% 60%;
     --primary-foreground: 0 0% 98%;
     --secondary: 214 66% 48%;
     --secondary-foreground: 200 50% 84%;
-    --muted: 234 64% 10%;
-    --muted-foreground: 200 46% 65%;
-    --accent: 217 79% 24%;
+    --muted: 206 0% 93%;
+    --muted-foreground: 2006 0% 25%;
+    --accent: 0 0% 70%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
@@ -212,7 +212,7 @@
   }
 
   body {
-    @apply !bg-black;
+    @apply  !bg-black;
   }
 }
 
@@ -251,5 +251,6 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 input[type='number'] {
-  -moz-appearance: textfield; /* For Firefox */
+  -moz-appearance: textfield;
+  /* For Firefox */
 }

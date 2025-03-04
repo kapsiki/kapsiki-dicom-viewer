@@ -1,33 +1,33 @@
-import React, { useState, useEffect, useMemo } from 'react';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
-import { Link, useNavigate } from 'react-router-dom';
-import moment from 'moment';
-import qs from 'query-string';
 import isEqual from 'lodash.isequal';
+import moment from 'moment';
+import PropTypes from 'prop-types';
+import qs from 'query-string';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useNavigate } from 'react-router-dom';
 //
-import filtersMeta from './filtersMeta.js';
-import { useAppConfig } from '@state';
 import { useDebounce, useSearchParams } from '@hooks';
-import { utils, hotkeys } from '@ohif/core';
+import { hotkeys, utils } from '@ohif/core';
+import { useAppConfig } from '@state';
+import filtersMeta from './filtersMeta.js';
 
 import {
-  Icon,
-  StudyListExpandedRow,
-  EmptyStudies,
-  StudyListTable,
-  StudyListPagination,
-  StudyListFilter,
-  TooltipClipboard,
-  useModal,
   AboutModal,
-  UserPreferences,
-  LoadingIndicatorProgress,
-  useSessionStorage,
-  InvestigationalUseDialog,
   Button,
   ButtonEnums,
+  EmptyStudies,
+  Icon,
+  InvestigationalUseDialog,
+  LoadingIndicatorProgress,
+  StudyListExpandedRow,
+  StudyListFilter,
+  StudyListPagination,
+  StudyListTable,
+  TooltipClipboard,
+  useModal,
+  UserPreferences,
+  useSessionStorage,
 } from '@ohif/ui';
 
 import { Header } from '@ohif/ui-next';
@@ -426,7 +426,7 @@ function WorkList({
                       } // launch-arrow | launch-info
                       onClick={() => {}}
                       dataCY={`mode-${mode.routeName}-${studyInstanceUid}`}
-                      className={isValidMode ? 'text-[13px]' : 'bg-[#222d44] text-[13px]'}
+                      className={isValidMode ? 'text-[13px]' : 'bg-[#dddddd] text-[13px]'}
                     >
                       {mode.displayName}
                     </Button>
@@ -541,7 +541,7 @@ function WorkList({
       />
       <Onboarding />
       <InvestigationalUseDialog dialogConfiguration={appConfig?.investigationalUseDialog} />
-      <div className="flex flex-col h-full overflow-y-auto">
+      <div className="flex h-full flex-col overflow-y-auto">
         <ScrollArea>
           <div className="flex grow flex-col">
             <StudyListFilter

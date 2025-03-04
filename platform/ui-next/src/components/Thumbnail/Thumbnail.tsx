@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import { useDrag } from 'react-dnd';
-import { Icons } from '../Icons';
-import { DisplaySetMessageListTooltip } from '../DisplaySetMessageListTooltip';
-import { TooltipTrigger, TooltipContent, Tooltip } from '../Tooltip';
 import { Button } from '../Button';
+import { DisplaySetMessageListTooltip } from '../DisplaySetMessageListTooltip';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '../DropdownMenu';
+import { Icons } from '../Icons';
+import { Tooltip, TooltipContent, TooltipTrigger } from '../Tooltip';
 
 /**
  * Display a thumbnail for a display set.
@@ -70,7 +70,7 @@ const Thumbnail = ({
       <div
         className={classnames(
           'flex h-full w-full flex-col items-center justify-center gap-[2px] p-[4px]',
-          isActive && 'bg-popover'
+          isActive && 'bg-[#dddddd]'
         )}
       >
         <div className="h-[114px] w-[128px]">
@@ -315,7 +315,7 @@ const Thumbnail = ({
     <div
       className={classnames(
         className,
-        'bg-muted hover:bg-primary/30 group flex cursor-pointer select-none flex-col rounded outline-none',
+        'hover:bg-primary/30 group flex cursor-pointer select-none flex-col rounded bg-[#ffffff] outline-none',
         viewPreset === 'thumbnails' && 'h-[170px] w-[135px]',
         viewPreset === 'list' && 'col-span-2 h-[40px] w-[275px]'
       )}

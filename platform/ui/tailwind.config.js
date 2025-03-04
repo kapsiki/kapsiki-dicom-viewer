@@ -19,32 +19,32 @@ module.exports = {
     colors: {
       overlay: 'rgba(0, 0, 0, 0.8)',
       transparent: 'transparent',
-      black: '#000',
-      white: '#fff',
+      black: '#eeeeee',
+      white: '#000000',
       initial: 'initial',
       inherit: 'inherit',
-
+      muted: '#ffffff',
       aqua: {
         pale: '#7bb2ce',
       },
 
       primary: {
         light: '#5acce6',
-        main: '#0944b3',
-        dark: '#090c29',
-        active: '#348cfd',
+        main: '#cccccc',
+        dark: '#ffffff',
+        active: '#aaaaaa',
       },
       inputfield: {
-        main: '#3a3f99',
+        main: '#bbbbbb',
         disabled: '#2b166b',
         focus: '#5acce6',
-        placeholder: '#39383f',
+        placeholder: '#aaaaaa',
       },
 
       secondary: {
-        light: '#3a3f99',
-        main: '#2b166b',
-        dark: '#041c4a',
+        light: '#dddddd',
+        main: '#dddddd',
+        dark: '#ffffff',
         active: '#1f1f27',
       },
 
@@ -53,16 +53,16 @@ module.exports = {
       },
 
       common: {
-        bright: '#e1e1e1',
+        bright: '#bbbbbb',
         light: '#a19fad',
         main: '#fff',
         dark: '#726f7e',
         active: '#2c3074',
       },
       bkg: {
-        low: '#050615',
-        med: '#090C29',
-        full: '#041C4A',
+        low: '#eeeeee',
+        med: '#dddddd',
+        full: '#cccccc',
       },
       info: {
         primary: '#FFFFFF',
@@ -84,7 +84,7 @@ module.exports = {
         30: '#09286e',
         40: '#0E307F',
         50: '#0F3A94',
-        80: '#1454D4',
+        80: '#bbbbbb',
         100: '#c4fdff',
         200: '#38daff',
         300: '#1D204D',
